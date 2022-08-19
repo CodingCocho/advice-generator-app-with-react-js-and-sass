@@ -1,6 +1,6 @@
 # Frontend Mentor - Advice generator app
 
-![Design preview for the Advice generator app coding challenge](./design/desktop-preview.jpg)
+![Design preview for the Advice generator app coding challenge](./src/design/desktop-preview.jpg)
 
 This challenge was completed by Raul Uriostegui Jr on 8-19-2022.
 This is the repository that holds my solution. 
