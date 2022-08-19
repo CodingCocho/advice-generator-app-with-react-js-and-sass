@@ -1,1 +1,1 @@
-{"version":3,"sources":["App.scss","App.css"],"names":[],"mappings":"AAAA;EAEI,sBAAA;EACA,WAAA;EACA,YAAA;ACAJ;;ADGA;EAEI,YAAA;ACDJ","file":"App.css"}
+{"version":3,"sources":["utilities/Palette.scss","App.scss","App.css"],"names":[],"mappings":"AAAA;;CAAA;ACEA;EAEI,sBAAA;EACA,WAAA;EACA,YAAA;ACCJ;;ADEA;EAEI,uCDPc;ECQd,aAAA;EACA,YAAA;ACAJ;;ADGA;EAEI,mBAAA;EACA,aAAA;EACA,uBAAA;EACA,aAAA;EACA,YAAA;ACDJ","file":"App.css"}

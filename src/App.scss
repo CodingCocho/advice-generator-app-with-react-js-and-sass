@@ -1,3 +1,5 @@
+@import './utilities/Palette.scss';
+
 *
 {
     box-sizing: border-box;
@@ -5,7 +7,18 @@
     padding: 0px;
 }
 
+.body-styling
+{
+    background-color: $backgroundColor;
+    height: 100vh;
+    width: 100vw;
+}
+
 .App
 {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
     width: 100vw;
 }

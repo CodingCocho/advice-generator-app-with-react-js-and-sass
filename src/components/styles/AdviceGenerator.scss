@@ -1,4 +1,4 @@
-@import './palette.scss';
+@import '../../utilities//Palette.scss';
 
 // Set default component style
 *
@@ -11,20 +11,24 @@
 // Main functioning container for advice generator
 .advice-container
 {
+    // Apply UX/UI styling
+    background-color: $cardColor;
+    border-radius: 10px;
+     // Center container in App.jsx
     display: block;
-    // Center container in App.jsx
     margin-left: auto;
     margin-right: auto;
+    padding: 20px;
     // Align all text for container
     text-align: center;
-    // Set default mobile width
+    // Set default mobile width 
     width: 350px;
     .advice-number
     {
         // Apply UX/UI styling
         color: $adviceAndButtonColor;
         font-family: $font;
-        font-size: 1.25rem;
+        font-size: 1rem;
         letter-spacing: .25rem;
     }
     .quote
@@ -33,17 +37,20 @@
         color: $textColor;
         font-family: $font;
         font-size: $fontSize;
+        margin-top: 20px;
     }
     .divider-image-mobile
     {
         // Allow display for mobile viewport
         display: block;
+        margin-top: 20px;
         width: 100%;
     }
     .divider-image-desktop
     {
         // Hide display for desktop viewport
         display: none;
+        margin-top: 20px;
         width: 100%;
     }
     .api-button
@@ -56,10 +63,10 @@
         background-color: $adviceAndButtonColor;
         border-radius: 50%;
         cursor: pointer; 
-        height: 50px;
-        margin: 25px auto -65px auto;
+        height: 50px !important;
+        margin: 25px auto -45px auto;
         position: relative;
-        width: 50px;        
+        width: 50px !important;        
         &:hover
         {
             // Apply active state styling
