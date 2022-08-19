@@ -1,0 +1,64 @@
+/*
+    This file contains a palette of style properties for the AdviceGenerator component
+*/
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+.advice-container {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 350px;
+}
+.advice-container .advice-number {
+  color: hsl(150deg, 100%, 66%);
+  font-family: "Manrope", sans-serif;
+  font-size: 1.25rem;
+  letter-spacing: 0.25rem;
+}
+.advice-container .quote {
+  color: hsl(193deg, 38%, 86%);
+  font-family: "Manrope", sans-serif;
+  font-size: 28px;
+}
+.advice-container .divider-image-mobile {
+  display: block;
+  width: 100%;
+}
+.advice-container .divider-image-desktop {
+  display: none;
+  width: 100%;
+}
+.advice-container .api-button {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  background-color: hsl(150deg, 100%, 66%);
+  border-radius: 50%;
+  cursor: pointer;
+  height: 50px;
+  margin: 25px auto -65px auto;
+  position: relative;
+  width: 50px;
+}
+.advice-container .api-button:hover {
+  box-shadow: 0 0 2rem hsla(150deg, 100%, 66%, 0.75);
+}
+
+@media screen and (min-width: 1440px) {
+  .advice-container {
+    width: 500px;
+  }
+  .advice-container .divider-image-mobile {
+    display: none;
+    width: 100%;
+  }
+  .advice-container .divider-image-desktop {
+    display: block;
+    width: 100%;
+  }
+}/*# sourceMappingURL=AdviceGenerator.css.map */

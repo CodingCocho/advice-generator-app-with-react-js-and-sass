@@ -1,0 +1,91 @@
+@import './palette.scss';
+
+// Set default component style
+*
+{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+// Main functioning container for advice generator
+.advice-container
+{
+    display: block;
+    // Center container in App.jsx
+    margin-left: auto;
+    margin-right: auto;
+    // Align all text for container
+    text-align: center;
+    // Set default mobile width
+    width: 350px;
+    .advice-number
+    {
+        // Apply UX/UI styling
+        color: $adviceAndButtonColor;
+        font-family: $font;
+        font-size: 1.25rem;
+        letter-spacing: .25rem;
+    }
+    .quote
+    {
+        // Apply UX/UI styling
+        color: $textColor;
+        font-family: $font;
+        font-size: $fontSize;
+    }
+    .divider-image-mobile
+    {
+        // Allow display for mobile viewport
+        display: block;
+        width: 100%;
+    }
+    .divider-image-desktop
+    {
+        // Hide display for desktop viewport
+        display: none;
+        width: 100%;
+    }
+    .api-button
+    {
+        // Allow flex properties to center image  
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        // Apply UX/UI styling
+        background-color: $adviceAndButtonColor;
+        border-radius: 50%;
+        cursor: pointer; 
+        height: 50px;
+        margin: 25px auto -65px auto;
+        position: relative;
+        width: 50px;        
+        &:hover
+        {
+            // Apply active state styling
+            box-shadow: 0 0 2rem hsla(150, 100%, 66%, .75);
+        }
+    }
+}
+
+// Integrate mobile responsiveness at viewport min-width 1440px
+@media screen and (min-width: 1440px) 
+{
+    .advice-container
+    {
+        // Restructure container size
+        width: 500px;
+        .divider-image-mobile
+        {
+            // Hide display for mobile viewport
+            display: none;
+            width: 100%;
+        }
+        .divider-image-desktop
+        {
+            // Allow display for desktop viewport
+            display: block;
+            width: 100%;
+        }
+    }
+  }
